@@ -1,0 +1,16 @@
+.navbar {
+    width: 100%;
+    padding: 10px 4% 10px 4%;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.669);
+  }
+  .navbar-inner {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-link {
+    width: 40%;
+    justify-content: space-around;
+  }

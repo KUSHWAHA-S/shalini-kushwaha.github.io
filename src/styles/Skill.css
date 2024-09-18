@@ -1,0 +1,25 @@
+.skill {
+    /* position: relative; */
+    height: 300px;
+  }
+  .skill .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .skill-wrapper {
+    justify-content: center;
+  }
+  .skill-type {
+    width: min-content;
+  }
+  
+  .skill-bg {
+    position: absolute;
+    font-size: 9rem;
+    letter-spacing: calc(100vw / 8);
+    display: flex;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  

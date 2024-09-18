@@ -1,0 +1,25 @@
+.cursor {
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 50%;
+    /* background-color: aliceblue; */
+    /* z-index: 200; */
+    transition-duration: 50ms;
+    transition-timing-function: ease-out;
+  }
+  .cursor::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    /* to left should eqal to border */
+    top: -7px;
+    left: -7px;
+    /* background: ); */
+    border-radius: 50%;
+    border: 7px solid rgb(102, 102, 100);
+    opacity: 0.5;
+    /* z-index: 1; */
+  }

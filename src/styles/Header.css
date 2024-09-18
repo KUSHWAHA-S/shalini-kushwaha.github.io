@@ -1,0 +1,10 @@
+.intro-wrapper {
+    min-height: 600px;
+    padding: 100px;
+  }
+  .intro-wrapper .container {
+    justify-content: space-between;
+  }
+  .intro-text-wrapper {
+    align-items: flex-start;
+  }

@@ -1,0 +1,147 @@
+.spacer {
+    height: 100vh;
+  }
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+  .timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+  
+    animation: movedown 1s linear forwards;
+    animation-timeline: view(200px 100px);
+    opacity: 0;
+    scale: 0.6;
+  }
+  
+  @keyframes movedown {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+    from {
+      opacity: 0;
+    }
+  }
+  .timeline-container:nth-child(1),
+  .timeline-container:nth-child(3) {
+    transform-origin: right;
+  }
+  .timeline-container:nth-child(2),
+  .timeline-container:nth-child(4) {
+    transform-origin: left;
+  }
+  /* .container:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .container:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .container:nth-child(3) {
+    animation-delay: 4s;
+  }
+  .container:nth-child(4) {
+    animation-delay: 6s;
+  } */
+  
+  .text-box {
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 10px;
+  }
+  .leftc {
+    left: 0;
+  }
+  .rightc {
+    left: 50%;
+  }
+  .timeline-container .dots {
+    position: absolute;
+    display: inline-block;
+    height: 48px;
+    background-color: black;
+    width: 48px;
+    border-radius: 50%;
+    right: -23px;
+    top: 32px;
+    z-index: 10;
+  }
+  .rightc .dots {
+    left: -24px;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: rgb(192, 113, 113);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+  
+    animation: moveline linear forwards;
+    animation-timeline: view(200px 100px);
+    opacity: 0;
+  }
+  
+  @keyframes moveline {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+  .text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .leftc-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid black;
+    right: -15px;
+  }
+  .rightc-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid black;
+    left: -15px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline {
+      margin: 50px auto;
+    }
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .timeline-container {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+    /* and many other */
+  }
+  
