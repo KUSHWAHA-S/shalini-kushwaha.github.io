@@ -1,62 +1,205 @@
+.mg-1rem {
+    margin-right: 1rem;
+}
+
+.experience {
+    padding: 100px 0;
+    background-color: black;
+    position: relative;
+}
+
+.ex-bg-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    filter: blur(180px);
+    z-index: 100;
+    grid-column-start: span 1;
+   
+    grid-column-end: span 1;
+}
+
 .experience .container {
     align-items: center;
     text-align: center;
-    background-color: rgb(30, 30, 31);
+ 
+    /* background-color: linear-gradient(145deg, rgba(255, 20, 147,0.3), rgba(255, 20, 147,0.3), rgba(255, 165, 20, 0.562),rgba(20, 86, 127, 0.819)), rgb(30, 30, 31); */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* background-blend-mode: screen; */
 }
-.ex-container{
+
+.ex-container {
     align-items: center;
     width: 100%;
     row-gap: 20px;
+    color: rgb(235, 235, 235);
 }
-.ex-container-sub{
-    background-color: rgb(30, 30, 31);
+
+.ex-container-sub {
+    /* background-color: rgb(30, 30, 31); */
     display: grid;
     row-gap: 20px;
     column-gap: 20px;
     grid-template-rows: 1fr 1fr;
     min-height: 460px;
-    padding: 20px;
+
 }
-.ex-container-sub:nth-child(1){
+
+.ex-container-sub:nth-child(1) {
     grid-template-columns: 1fr 1fr 1fr;
 }
-.ex-container-sub:nth-child(2){
+
+.ex-container-sub:nth-child(2) {
     grid-template-columns: 1fr 1fr 1fr;
 }
-.ex-container-sub:nth-child(3){
-    grid-template-columns: 1fr 1fr;
-}
-.ex-container-sub:nth-child(4){
+
+.ex-container-sub:nth-child(3) {
     grid-template-columns: 1fr 1fr;
 }
 
-.ex-box{
-   font-size: 3rem;
-    /* width: 100px; */
-    background-color: antiquewhite;
-    border-radius: 10px;
+.ex-container-sub:nth-child(4) {
+    grid-template-columns: 1fr 1fr;
 }
-#ex-box-1  {
+
+.ex-box {
+
+    /* width: 100px; */
+    background-color: rgb(55, 55, 55);
+  
+    border-radius: 10px;
+    justify-content: center;
+    padding: 3rem;
+    background-image: radial-gradient(400px at var(--cursor-x) var(--cursor-y), rgba(255, 255, 255, 0.4), transparent);
+}
+.ex-bg {
+    position: absolute;
+    top: 621px;
+    bottom: 289px;
+    width: 100%;
+    max-width: 980px;
+    opacity: .6;
+    z-index: 101;
+}
+.ex-bg {
+    background: conic-gradient(
+        from 180deg at 50% 50%,
+        #0aefff -69.37deg,
+        #0f83ff 31.88deg,
+        #b056e7 120deg,
+        #ff9966 204.37deg,
+        #0aefff 290.63deg,
+        #0f83ff 391.87deg
+      ),
+      #a84ddf;
+}
+
+#ex-box-1 {
     grid-area: 1 / 1 / 2 / 2;
 }
-#ex-box-2{
-    grid-area: 1 / 2 / 3 / 4 ;
+
+#ex-box-2 {
+    grid-area: 1 / 2 / 3 / 4;
 }
-#ex-box-3{
-    grid-area: 2 / 1 / 3 / 2 ;
+
+#ex-box-3 {
+    grid-area: 2 / 1 / 3 / 2;
 }
-#ex-box-4{
-    grid-area: 1 / 1 / 3 / 4 ;
+
+#ex-box-4 {
+    grid-area: 1 / 1 / 3 / 4;
+
 }
-#ex-box-5{
-    grid-area: 1 / 1 / 3 / 2 ;
+
+#ex-box-5 {
+    grid-area: 1 / 1 / 3 / 2;
+    align-items: start;
+    justify-content: space-between;
 }
-#ex-box-6{
-    grid-area: 1 / 2 / 3 / 4 ;
+
+#ex-box-6 {
+    grid-area: 1 / 2 / 3 / 4;
+    align-items: end;
+    justify-content: space-between;
 }
-#ex-box-7{
-    grid-area: 1 / 1 / 3 / 2 ;
+
+#ex-box-7 {
+    grid-area: 1 / 1 / 3 / 2;
+    align-items: start;
+    justify-content: space-between;
 }
-#ex-box-8{
-    grid-area: 1 / 2 / 3 / 4 ;
+
+#ex-box-8 {
+    grid-area: 1 / 2 / 3 / 4;
+    justify-content: space-between;
+
+
+}
+
+.ex-stats {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.ex-stats-figure {
+    font-size: 3rem;
+    width: fit-content;
+    justify-self: center;
+    font-weight: 500;
+}
+
+.ex-stats-sub {
+    font-size: 1.5rem;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.ex-stats-symbol {
+    font-size: 1rem;
+    font-weight: bolder;
+    width: fit-content;
+    align-self: self-start;
+}
+
+.ex-description {
+    align-self: center;
+}
+
+#ex-box-2 .ex-stats {
+    flex-wrap: wrap;
+}
+
+#ex-box-2 .ex-description {
+    width: 40%;
+}
+
+#ex-box-3 .ex-stats .ex-stats-symbol {
+    align-self: end;
+    padding-bottom: 0.6rem;
+}
+
+#ex-box-4 .ex-description {
+    width: 20%;
+    align-self: start;
+    text-align: left;
+}
+
+#ex-box-7 .ex-stats-figure {
+    text-align: left;
+    width: 40%;
+}
+
+#ex-box-8 .ex-stats-figure {
+    text-align: right;
+    align-self: flex-end;
+    width: 40%;
+    /* justify-self: flex-start; */
+    /* justify-content: space-between; */
 }

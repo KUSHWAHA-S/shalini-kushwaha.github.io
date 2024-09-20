@@ -1,10 +1,35 @@
 .intro-wrapper {
-    min-height: 600px;
-    padding: 100px;
-  }
-  .intro-wrapper .container {
-    justify-content: space-between;
-  }
-  .intro-text-wrapper {
-    align-items: flex-start;
-  }
+  height: 80vh ;
+  min-height: 600px;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.intro-wrapper .container {
+  justify-content: space-between;
+
+}
+
+
+.intro-head-wrapper{
+  width: 75%;
+  margin-bottom: 6rem;
+  font-size: 1.6rem;
+}
+.intro-foot-wrapper {
+  width: 100%;
+  justify-content: end;
+}
+
+.intro-foot-wrapper p {
+  width: 50%;
+}
+.intro-head-wrapper h1,.intro-head-wrapper h2 {
+  display: inline;
+  font-weight: 400;
+}
+.intro-head-wrapper h2 {
+  margin-left: 0.5rem;
+}
